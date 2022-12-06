@@ -42,6 +42,13 @@ public class DAY5 {
                 int from = Integer.parseInt(numbers[3]);
                 int to = Integer.parseInt(numbers[5]);
 
+                //PART 1
+                /*for (int i = start-1; i >= 0; i--) {
+                    stackList.get(to-1).addFirst(stackList.get(from-1).get(0));
+                    stackList.get(from-1).removeFirst();
+                }*/
+
+                //PART 2
                 for (int i = start-1; i >= 0; i--) {
                     stackList.get(to-1).addFirst(stackList.get(from-1).get(i));
                     stackList.get(from-1).remove(i);
