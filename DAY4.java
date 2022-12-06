@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
 
-//DAY 3
+//DAY 4
 public class DAY4 {
 
     public static void main(String[] args) throws FileNotFoundException {
