@@ -10,6 +10,7 @@ public class DAY5 {
         for (int i = 0; i < size-1; i++) {
             lists.add(new LinkedList<>());
         }
+        //azért linkedList, mert a removeFirst-t meg lehet rajta hívni!
         lists.add(new LinkedList<>());
         return lists;
     }
@@ -17,10 +18,10 @@ public class DAY5 {
     static ArrayList<String> lines = new ArrayList<>();
 
     public static void main(String[] args) throws FileNotFoundException {
-        File myObj = new File("C:\\Users\\borza\\IdeaProjects\\AdventCode\\src\\day5_input.txt");
-        Scanner sc = new Scanner(myObj);
+        File file = new File("C:\\Users\\borza\\IdeaProjects\\AdventCode\\src\\day5_input.txt");
+        Scanner sc = new Scanner(file);
+        //lista, amiben olyan lista van, aminek az elejéről is lehet törölni
         ArrayList<LinkedList<String>> finalList= new ArrayList<>();
-
         while (sc.hasNextLine()) {
             String line = sc.nextLine();
             if(line.startsWith("[")){
@@ -61,8 +62,8 @@ public class DAY5 {
                 }
             }
         }
-        for (LinkedList<String> lista: finalList) {
-            for (String s : lista) {
+        for (LinkedList<String> list: finalList) {
+            for (String s : list) {
                 System.out.print(s);
                 break;
             }

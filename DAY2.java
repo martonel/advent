@@ -5,8 +5,8 @@ import java.util.*;
 //DAY 2
 public class DAY2 {
     public static void main(String[] args) throws FileNotFoundException {
-        File myObj = new File("C:\\Users\\borza\\IdeaProjects\\AdventCode\\src\\day2_input.txt");
-        Scanner sc = new Scanner(myObj);
+        File file = new File("C:\\Users\\borza\\IdeaProjects\\AdventCode\\src\\day2_input.txt");
+        Scanner sc = new Scanner(file);
         int score = 0;
         while (sc.hasNextLine()) {
             String line = sc.nextLine();

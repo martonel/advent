@@ -9,8 +9,8 @@ import java.util.Set;
 public class DAY4 {
 
     public static void main(String[] args) throws FileNotFoundException {
-        File myObj = new File("C:\\Users\\borza\\IdeaProjects\\AdventCode\\src\\day4_input.txt");
-        Scanner sc = new Scanner(myObj);
+        File file = new File("C:\\Users\\borza\\IdeaProjects\\AdventCode\\src\\day4_input.txt");
+        Scanner sc = new Scanner(file);
         int score = 0;
         int score2 = 0;
         while (sc.hasNextLine()) {

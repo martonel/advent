@@ -51,8 +51,8 @@ public class DAY3 {
 
 //PART 2
     public static void main(String[] args) throws FileNotFoundException {
-        File myObj = new File("C:\\Users\\borza\\IdeaProjects\\AdventCode\\src\\day3_input.txt");
-        Scanner sc = new Scanner(myObj);
+        File file = new File("C:\\Users\\borza\\IdeaProjects\\AdventCode\\src\\day3_input.txt");
+        Scanner sc = new Scanner(file);
         char[] alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ".toCharArray();
         int score = 0;
         int n = 1;
